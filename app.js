@@ -88,23 +88,27 @@ var modal = document.getElementById("myModal");
 var acceptPromoBtn = document.getElementById("acceptPromo");
 var declinePromoBtn = document.getElementById("declinePromo");
 
-(function createHtml() {
-  let template = ``;
+(function createHtmlElements() {
 
-  for (let i = 0; i < promotions.length; i++) {
+    let template = ``;
 
-    template += `
+    for (let i = 0; i < promotions.length; i++) {
+
+        template += `
             <div class="promoContainer" id=${promotions[i].id}>
-                    <h1 class="promoClass" id="promo_title_${i}">test{{promo_title}}</h1>
+                    <h1 class="promoClass" id="promo_title_${i}">"test"{{promo_title}}</h1>
 
                     <button class="ctaButton" id="promo_ctaLabel_${i}">{{ctaLabel}}</button>
 
                     <p class="promoTerms" id="promo_terms_${i}">{{promo_terms}}</p>
             </div>
             `;
-  }
-  return template;
-})();
+    }
+    return template;
+    document.getElementById('column').innerHTML = createHtmlElements()
+
+}());
+
 
 function disablePromo(i) {
   if (promotions[i].isDisabled === true) {
