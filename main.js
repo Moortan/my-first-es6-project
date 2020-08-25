@@ -1,4 +1,4 @@
-var promotions = [
+const promotions = [
 	{
 		id: "5f2bda2a237d2a466b9d59fb",
 		slug: "cillum",
