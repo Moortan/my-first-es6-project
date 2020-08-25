@@ -92,14 +92,14 @@ var promotions = [
 
 //creating a list of CTA Buttons
 //each element is a button bound with its promo
-var ctaBtn = document.getElementsByClassName("ctaButton");
+const ctaBtn = document.getElementsByClassName("ctaButton");
 
 //modal window that appear after clicking CTA button
-var modal = document.getElementById("myModal");
+const modal = document.getElementById("myModal");
 
 //two buttons at modal window
-var acceptPromoBtn = document.getElementById("acceptPromo");
-var declinePromoBtn = document.getElementById("declinePromo");
+const acceptPromoBtn = document.getElementById("acceptPromo");
+const declinePromoBtn = document.getElementById("declinePromo");
 
 function createHtmlElements() {
 	let template = ``;
