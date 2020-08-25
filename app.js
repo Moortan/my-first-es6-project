@@ -113,10 +113,7 @@ function disablePromo(i) {
 
 		//change the style of promo which is disabled
 		document.getElementById(promotions[i].id).style.background = "#A9A9A9";
-
-		//		document.getElementById("promo_ctaLabel_" + i)
-		//                .style.background = "#C0C0C0";
-
+		
 		document.getElementById("promo_ctaLabel_" + i).classList.add("disabledButton");
 
 		//disable button of disabled promo
