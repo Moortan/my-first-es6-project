@@ -1,4 +1,4 @@
-const promotions = [
+const allPromotions = [
 	{
 		id: "5f2bda2a237d2a466b9d59fb",
 		slug: "cillum",
@@ -89,6 +89,9 @@ const promotions = [
 		isDisabled: false,
 	},
 ];
+
+const promotions = allPromotions.filter(p => p.isDisabled === false);
+
 
 //creating a list of CTA Buttons
 //each element in the list is a button bound with its promo
